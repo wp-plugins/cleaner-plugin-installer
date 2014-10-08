@@ -615,9 +615,9 @@ add_filter( 'plugins_api_args', 'ddw_cpi_tweak_plugins_api_args', 10, 2 );
 /**
  * Apply screen options for Plugins API arguments: plugin cards per page.
  *
- * @since 1.0.0
+ * @since  1.0.0
  *
- * @uses  ddw_cpi_plugin_installer_plugin_cards_per_page()
+ * @uses   ddw_cpi_plugin_installer_plugin_cards_per_page()
  *
  * @return object Tweaked arguments for Plugins API.
  */

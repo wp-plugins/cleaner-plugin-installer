@@ -153,7 +153,7 @@ function custom_cpi_plugin_installer_tabs_tweaks( $tabs ) {
 Just released into the wild.
 
 == Plugin Links ==
-* [Translations (GlotPress)](http://translate.wpautobahn.com/projects/genesis-plugins-deckerweb/cleaner-plugin-installer)
+* [Translations (GlotPress)](http://translate.wpautobahn.com/projects/wordpress-plugins-deckerweb/cleaner-plugin-installer)
 * [User support forums](https://wordpress.org/support/plugin/cleaner-plugin-installer)
 * [Code snippets archive for customizing, GitHub Gist](https://gist.github.com/deckerweb/8e3bc0a1d62a096695db)
 
