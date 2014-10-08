@@ -144,7 +144,7 @@ function custom_cpi_plugin_installer_tabs_tweaks( $tabs ) {
 
 == Changelog ==
 
-= 1.0.0 (2014-10-??) =
+= 1.0.0 (2014-10-09) =
 * Initial release
 
 == Upgrade Notice ==
