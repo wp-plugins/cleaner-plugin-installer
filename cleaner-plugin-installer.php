@@ -105,9 +105,8 @@ function ddw_cpi_setup_plugin() {
 	load_plugin_textdomain( $cpi_textdomain, FALSE, CLPINST_PLUGIN_BASEDIR . 'languages' );
 
 
-	/** Include admin helper functions */
+	/** Include plugin installer main functions */
 	require_once( CLPINST_PLUGIN_DIR . 'includes/cpi-plugin-installer.php' );
-
 
 	/** Include general (helper) functions */
 	require_once( CLPINST_PLUGIN_DIR . 'includes/cpi-functions.php' );
@@ -115,7 +114,7 @@ function ddw_cpi_setup_plugin() {
 	/** Include admin specific functions, help tab etc. */
 	require_once( CLPINST_PLUGIN_DIR . 'includes/cpi-admin-extras.php' );
 
-	/** Add "Widgets Page" link to plugins page */
+	/** Add "Plugin Install" page link to plugins page */
 	if ( is_admin() && current_user_can( 'install_plugins' ) ) {
 
 		add_filter(
