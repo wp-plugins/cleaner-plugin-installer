@@ -26,6 +26,10 @@ Now it starts with what should have been the default (in my opinion) from the be
 
 *And there you have it, a one-purpose admin helper plugin aiming at (super) administrators and webmasters searching for and installing plugins from WordPress.org repository on a daily basis.*
 
+= Video of Plugin Walkthrough plus Demo: =
+[youtube https://www.youtube.com/watch?v=fD42vNhuArA]
+[**original video link:** *Screencast by plugin developer David Decker* ](https://www.youtube.com/watch?v=fD42vNhuArA)
+
 = Benefits & Advantages =
 * Cleaner, more easy, more useful!
 * Improved performance of `plugin-install.php` admin start page!
@@ -80,6 +84,10 @@ Now it starts with what should have been the default (in my opinion) from the be
 * WordPress version 4.0 or higher!
 * At least capability of `install_plugins` for your user role (to access the plugin installer page)!
 * (Technically the plugin is compatible also with older WP versions, styling is made for WP 4.0+!)
+
+= Video of Plugin Walkthrough plus Demo: =
+[youtube https://www.youtube.com/watch?v=fD42vNhuArA]
+[**original video link:** *Screencast by plugin developer David Decker* ](https://www.youtube.com/watch?v=fD42vNhuArA)
 
 **Own translation/wording:** For custom and update-secure language files please upload them to `/wp-content/languages/cleaner-plugin-installer/` (just create this folder) - This enables you to use fully custom translations that won't be overridden on plugin updates. Also, complete custom English wording is possible with that, just use a language file like `cleaner-plugin-installer-en_US.mo/.po` to achieve that (for creating one see the tools on "Other Notes").
 
