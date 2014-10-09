@@ -4,7 +4,7 @@ Donate link: http://genesisthemes.de/en/donate/
 Tags: plugin installer, cleaner, plugins, installer, search, admin, deckerweb
 Requires at least: 4.0
 Tested up to: 4.0
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPL-2.0+
 License URI: http://www.opensource.org/licenses/gpl-license.php
 
@@ -22,7 +22,7 @@ Simplified & more useful Plugin Install page, replacing Featured tab with bigger
 = Scratching My Own Itch =
 As of WordPress 4.0+, going to "Add Plugins" page and being welcomed by always the same old 6 featured plugin cards annoyed me big time! So I thought on how to change this default behavior. Due to WordPress' genius Hooks & Filter functionality I could easily tweak this via my plugin.
 
-Now it starts with what it should have been the default (in my opinion) from the beginning: a large and nice plugin search box - because that's what I do all the day :). Side benefit: better performance as no external plugin card content has to be loaded!
+Now it starts with what should have been the default (in my opinion) from the beginning: a large and nice plugin search box - because that's what I do all the day :). Side benefit: better performance as no external plugin card content has to be loaded!
 
 *And there you have it, a one-purpose admin helper plugin aiming at (super) administrators and webmasters searching for and installing plugins from WordPress.org repository on a daily basis.*
 
@@ -88,6 +88,7 @@ Now it starts with what it should have been the default (in my opinion) from the
 = Does this plugin replace the built-in "Featured" tab? =
 Yes, but only its content! The page query parameter `?tab=featured` was left untouched! This way all works as before, if you access the `plugin-install.php` admin page, but you'll be welcomed with a big search input field.
 
+
 = What's the benefit of this curated Topics list with plugin tags? =
 In my opinion this helps to find specific plugins (within certain areas, topics, use cases...) a lot faster - via your admin area. For example, clicking on "TinyMCE" will list you all plugin cards tagged (by their authors) with "tinymce".
 
@@ -95,13 +96,16 @@ The original built-in plugin tag cloud is way to generic, so I removed it.
 
 **Note:** Manually curated tag lists for a lot of plugin types, use cases and popular plugin solutions. Listing here maintained by David Decker (plugin author of "Cleaner Plugin Installer"). Tag itself are from plugin's readme header.
 
+
 = Why the Collections tab for "WPCore"? =
 Glad you asked :). This is a bit more experimental, I guess. However, in my opinion, the WPCore plugin and service are incredible useful, so I thought of some basic integration. This could help to jump faster to WPCore functionality if the service is already active. If it is not active yet, users are informed about it and can install and register for it super fast. This may help users get aware of an alternative for collecting & managing their favorite plugins - and bulk installing them on any installation.
 
 **Disclaimer:** "I am NOT affiliated with 'WPCore' in any way, other than that, being a normal user of their service & plugin. 'WPCore' is a community effort aiming to make some things a bit easier for a lot of administrators and webmasters." *—David Decker, author of "Cleaner Plugin Installer" plugin*
 
-= Why the additional Newest tab? =
+
+= Why the additional "Newest" tab? =
 I think it is really useful to easily check for the newest additions on WordPress.org plugin repository without leaving your admin area. Also great for test installations to just install a brand new plugin and try it out! :)
+
 
 = How can I remove the "Collections" tab? =
 This is easily possible with a little code snippet added to a *functionality plugin*, *snippet manager* or to your theme's/ child theme's `functions.php`:
@@ -125,14 +129,20 @@ function custom_cpi_plugin_installer_tabs_tweaks( $tabs ) {
 }  // end function
 `
 
-**---> Note:** I only recommend using a custom functionality plugin, or snippets manager plugins like ["Code Snippets"](https://wordpress.org/plugins/code-snippets/) or ["Toolbox"](https://wordpress.org/plugins/toolbox/). --- Customizing your `functions.php` is always dangerous and at your own risk. You may experience crashed & trouble when changing your theme/ child theme. Also, any admin functionality has no place in your theme!
+**---> Note:** I only recommend using a custom functionality plugin, or snippets manager plugins like ["Code Snippets"](https://wordpress.org/plugins/code-snippets/) or ["Toolbox"](https://wordpress.org/plugins/toolbox/). --- Customizing your `functions.php` is always dangerous and at your own risk! You may experience a crashed site plus lots of trouble when changing your theme/ child theme afterwards. Also, any generic admin functionality has no place in your theme!
 
+
+= How can I remove the "Topics" tab? =
+Possible, via the above code for "Collections" tab: you only have to add the following line after the first "unset" line (or replace this line with that):
+`
+	unset( $tabs[ 'topics' ] );
+`
 
 == Screenshots ==
 
-1. Cleaner Plugin Installer: BEFORE view of the "Plugins > Add New" admin page ([Click here for larger version of screenshot](https://www.dropbox.com/s/wpjgjatt0ipvoh6/screenshot-1.png?dl=0))
+1. Cleaner Plugin Installer: BEFORE view of the "Plugins > Add Plugins" admin page (Add New). ([Click here for larger version of screenshot](https://www.dropbox.com/s/wpjgjatt0ipvoh6/screenshot-1.png?dl=0))
 
-2. Cleaner Plugin Installer: AFTER view of the "Plugins > Add New" admin page (after activating this plugin) ([Click here for larger version of screenshot](https://www.dropbox.com/s/sclx8djssnngnqa/screenshot-2.png?dl=0))
+2. Cleaner Plugin Installer: AFTER view of the "Plugins > Add Plugins" admin page (Add New), after activating this plugin. ([Click here for larger version of screenshot](https://www.dropbox.com/s/sclx8djssnngnqa/screenshot-2.png?dl=0))
 
 3. Cleaner Plugin Installer: Additional "Topics" tab ([Click here for larger version of screenshot](https://www.dropbox.com/s/g6f2sc0oasw5b52/screenshot-3.png?dl=0))
 
@@ -144,16 +154,23 @@ function custom_cpi_plugin_installer_tabs_tweaks( $tabs ) {
 
 == Changelog ==
 
+= 1.0.1 (2014-10-09) =
+* UPDATE: Improved Multisite compatibility for "Plugin Cards per page" screen options setting.
+* UPDATE: Various small improvements, mostly regarding (inline) documentation and readme.txt file.
+
 = 1.0.0 (2014-10-09) =
 * Initial release
 
 == Upgrade Notice ==
 
+= 1.0.1 =
+Improved Multisite compatibility for "Plugin Cards per page" screen options setting.
+
 = 1.0.0 =
 Just released into the wild.
 
 == Plugin Links ==
-* [Translations (GlotPress)](http://translate.wpautobahn.com/projects/genesis-plugins-deckerweb/cleaner-plugin-installer)
+* [Translations (GlotPress)](http://translate.wpautobahn.com/projects/wordpress-plugins-deckerweb/cleaner-plugin-installer)
 * [User support forums](https://wordpress.org/support/plugin/cleaner-plugin-installer)
 * [Code snippets archive for customizing, GitHub Gist](https://gist.github.com/deckerweb/8e3bc0a1d62a096695db)
 
