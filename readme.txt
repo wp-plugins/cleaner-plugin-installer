@@ -4,7 +4,7 @@ Donate link: http://genesisthemes.de/en/donate/
 Tags: plugin installer, cleaner, plugins, installer, search, admin, deckerweb
 Requires at least: 4.0
 Tested up to: 4.0
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPL-2.0+
 License URI: http://www.opensource.org/licenses/gpl-license.php
 
@@ -115,6 +115,10 @@ Glad you asked :). This is a bit more experimental, I guess. However, in my opin
 I think it is really useful to easily check for the newest additions on WordPress.org plugin repository without leaving your admin area. Also great for test installations to just install a brand new plugin and try it out! :)
 
 
+= Can I suggest new topics and tags for the "Topics" tab? =
+Absolutely! Just open a new thread in the [support forum **here**](https://wordpress.org/support/plugin/cleaner-plugin-installer) and let us know your feedback! Thank you!
+
+
 = How can I remove the "Collections" tab? =
 This is easily possible with a little code snippet added to a *functionality plugin*, *snippet manager* or to your theme's/ child theme's `functions.php`:
 
@@ -162,6 +166,12 @@ Possible, via the above code for "Collections" tab: you only have to add the fol
 
 == Changelog ==
 
+= 1.0.2 (2014-10-09) =
+* UPDATE: Fixed debug notice on "Topics" tab, plus interal improvements.
+* UPDATE: Fixed markup issue on "Collections" tab.
+* UPDATE: Readme here, another FAQ entry, plus added video walkthrough & demo :).
+* UPDATE: Updated German translations and also the .pot file for all translators.
+
 = 1.0.1 (2014-10-09) =
 * UPDATE: Improved Multisite compatibility for "Plugin Cards per page" screen options setting.
 * UPDATE: Various small improvements, mostly regarding (inline) documentation and readme.txt file.
@@ -170,6 +180,9 @@ Possible, via the above code for "Collections" tab: you only have to add the fol
 * Initial release
 
 == Upgrade Notice ==
+
+= 1.0.2 =
+Fixed debug notice and markup issue. Also updated .pot file for translators plus German translations.
 
 = 1.0.1 =
 Improved Multisite compatibility for "Plugin Cards per page" screen options setting.
