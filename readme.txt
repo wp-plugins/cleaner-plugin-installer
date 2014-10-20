@@ -166,7 +166,7 @@ Possible, via the above code for "Collections" tab: you only have to add the fol
 == Changelog ==
 
 = 1.0.3 (2014-10-20) =
-* UPDATE: Fixed and improved per page setting for number of plugin cards, now working (better) with all supported tabs.
+* UPDATE: Fixed and improved the per page setting for the number of plugin cards, now working (better) with all supported tabs.
 * NEW: Added 12 new curated topic tags to the "Topics" tab.
 * UPDATE: Various small improvements, mostly regarding (inline) documentation and readme.txt file.
 * CODE: Switched linked topic tags to "slug" linking internally.
