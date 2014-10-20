@@ -1,10 +1,10 @@
 === Cleaner Plugin Installer ===
 Contributors: daveshine, deckerweb
 Donate link: http://genesisthemes.de/en/donate/
-Tags: plugin installer, cleaner, plugins, installer, search, admin, deckerweb
+Tags: plugin installer, cleaner, plugins, installer, search, admin, focus, efficient, deckerweb
 Requires at least: 4.0
 Tested up to: 4.0
-Stable tag: 1.0.2
+Stable tag: 1.0.3
 License: GPL-2.0+
 License URI: http://www.opensource.org/licenses/gpl-license.php
 
@@ -28,7 +28,7 @@ Now it starts with what should have been the default (in my opinion) from the be
 
 = Video of Plugin Walkthrough plus Demo: =
 [youtube https://www.youtube.com/watch?v=fD42vNhuArA]
-[**original video link:** *Screencast by plugin developer David Decker* ](https://www.youtube.com/watch?v=fD42vNhuArA)
+[**original video link:** *Screencast by plugin developer David Decker*](https://www.youtube.com/watch?v=fD42vNhuArA)
 
 = Benefits & Advantages =
 * Cleaner, more easy, more useful!
@@ -57,7 +57,6 @@ Now it starts with what should have been the default (in my opinion) from the be
 = Feedback =
 * I am open for your suggestions and feedback - Thank you for using or trying out one of my plugins!
 * Drop me a line [@deckerweb](https://twitter.com/deckerweb) on Twitter
-* Follow me on [my Facebook page](https://www.facebook.com/deckerweb.service)
 * Or follow me on [+David Decker](https://plus.google.com/+DavidDecker/posts) on Google Plus ;-)
 
 = This Plugin... =
@@ -87,7 +86,7 @@ Now it starts with what should have been the default (in my opinion) from the be
 
 = Video of Plugin Walkthrough plus Demo: =
 [youtube https://www.youtube.com/watch?v=fD42vNhuArA]
-[**original video link:** *Screencast by plugin developer David Decker* ](https://www.youtube.com/watch?v=fD42vNhuArA)
+[**original video link:** *Screencast by plugin developer David Decker*](https://www.youtube.com/watch?v=fD42vNhuArA)
 
 **Own translation/wording:** For custom and update-secure language files please upload them to `/wp-content/languages/cleaner-plugin-installer/` (just create this folder) - This enables you to use fully custom translations that won't be overridden on plugin updates. Also, complete custom English wording is possible with that, just use a language file like `cleaner-plugin-installer-en_US.mo/.po` to achieve that (for creating one see the tools on "Other Notes").
 
@@ -166,8 +165,15 @@ Possible, via the above code for "Collections" tab: you only have to add the fol
 
 == Changelog ==
 
+= 1.0.3 (2014-10-??) =
+* UPDATE: Fixed and improved per page setting for number of plugin cards, now working (better) with all supported tabs.
+* NEW: Added 12 new curated topic tags to the "Topics" tab.
+* UPDATE: Various small improvements, mostly regarding (inline) documentation and readme.txt file.
+* CODE: Switched linked topic tags to "slug" linking internally.
+* UPDATE: Updated German translations and also the .pot file for all translators.
+
 = 1.0.2 (2014-10-09) =
-* UPDATE: Fixed debug notice on "Topics" tab, plus interal improvements.
+* UPDATE: Fixed debug notice on "Topics" tab, plus internal improvements.
 * UPDATE: Fixed markup issue on "Collections" tab.
 * UPDATE: Readme here, another FAQ entry, plus added video walkthrough & demo :).
 * UPDATE: Updated German translations and also the .pot file for all translators.
@@ -180,6 +186,9 @@ Possible, via the above code for "Collections" tab: you only have to add the fol
 * Initial release
 
 == Upgrade Notice ==
+
+= 1.0.3 =
+???
 
 = 1.0.2 =
 Fixed debug notice and markup issue. Also updated .pot file for translators plus German translations.
