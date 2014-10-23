@@ -3,8 +3,8 @@ Contributors: daveshine, deckerweb
 Donate link: http://genesisthemes.de/en/donate/
 Tags: plugin installer, cleaner, plugins, installer, search, admin, focus, efficient, deckerweb
 Requires at least: 4.0
-Tested up to: 4.0
-Stable tag: 1.0.3
+Tested up to: 4.1
+Stable tag: 1.1.0
 License: GPL-2.0+
 License URI: http://www.opensource.org/licenses/gpl-license.php
 
@@ -36,7 +36,8 @@ Now it starts with what should have been the default (in my opinion) from the be
 * Additional curated topics with list of plugin tags (from WordPress.org) for lots of use cases etc.
 * Additional basic integration of ["WPCore Plugin Manager"](https://wordpress.org/plugins/wpcore/) base plugin and service.
 * Added "Screen Options" tab (on top right corner) to *set number of plugin cards per page* on a per user basis.
-* Additional hooks and filters in place so you could easily tweak my plugin's output if ever needed :)
+* Tweaked "ZIP Uploader page" - larger file upload field, plus bigger button.
+* Highly extensible: Additional hooks and filters in place so you could easily tweak my plugin's output (or add, or remove) if ever needed :)
 * Lightweight, simple one-purpose plugin. Loads only within `/wp-admin/` when and where needed.
 * Fully embracing Multisite Network modus, yeah!
 * Fully translateable!
@@ -155,37 +156,57 @@ Possible, via the above code for "Collections" tab: you only have to add the fol
 
 2. Cleaner Plugin Installer: AFTER view of the "Plugins > Add Plugins" admin page (Add New), after activating this plugin. ([Click here for larger version of screenshot](https://www.dropbox.com/s/sclx8djssnngnqa/screenshot-2.png?dl=0))
 
-3. Cleaner Plugin Installer: Additional "Topics" tab ([Click here for larger version of screenshot](https://www.dropbox.com/s/g6f2sc0oasw5b52/screenshot-3.png?dl=0))
+3. Cleaner Plugin Installer: Additional "Topics" tab -- 2 column view since version v1.1.0. ([Click here for larger version of screenshot](https://www.dropbox.com/s/g6f2sc0oasw5b52/screenshot-3.png?dl=0))
 
 4. Cleaner Plugin Installer: Additional "Collections" tab ([Click here for larger version of screenshot](https://www.dropbox.com/s/tioagtmipl7pzrd/screenshot-4.png?dl=0))
 
 5. Cleaner Plugin Installer: Added "Screen Options" tab for *setting number of plugin cards per page* - on a per user basis. ([Click here for larger version of screenshot](https://www.dropbox.com/s/psnpnxls3u6yg2l/screenshot-5.png?dl=0))
 
-6. Cleaner Plugin Installer: Plugin's help tab. ([Click here for larger version of screenshot](https://www.dropbox.com/s/7fqcitzudk3zand/screenshot-6.png?dl=0))
+6. Cleaner Plugin Installer: Tweaked ZIP uploader page with larger file input field and bigger upload button. ([Click here for larger version of screenshot](https://www.dropbox.com/s/7fqcitzudk3zand/screenshot-6.png?dl=0))
+
+7. Cleaner Plugin Installer: Added little note on Network plugin installer screen in Multisite to make it crystal clear where the installing happens! :) ([Click here for larger version of screenshot](https://www.dropbox.com/s/69ze03hsu0jcrr8/screenshot-7.png?dl=0))
+
+8. Cleaner Plugin Installer: Plugin's help tab. ([Click here for larger version of screenshot](https://www.dropbox.com/s/gogmbfw8dgqbmgl/screenshot-8.png?dl=0))
 
 == Changelog ==
+
+= 1.1.0 (2014-10-23) =
+* NEW: Tweaked the Plugin ZIP Uploader page! Larger file input field (or drag a file in...), bigger and nicer button. All more clear and logical - as one would expect it (hopefully)!
+* NEW: Added 10 new curated topic tags to the "Topics" tab.
+* NEW: Only for German locales: added 4 new curated topic tags to the "Topics" tab.
+* NEW: Added little admin notice on Network admin plugin installer pages to make it clearer it's the Network installer (only for Multisite of course!).
+* NEW: Made search type (term, tag, author) tweakable, so it's possible from now on to filter the search type for the default or your own custom topic lists!
+* NEW: Added `:hover` styling for any instance showing "plugin cards" - this way you can better visually distinguish those cards!
+* NEW: All markup and CSS way better optimized for smaller displays and mobile usage.
+* UPDATE: Topics listing now in 2 column view for regular displays.
+* UPDATE: Some more smaller CSS tweaks here and there.
+* UPDATE: Various small improvements, mostly regarding, code organization, (inline) code documentation and `readme.txt` file.
+* UPDATE: Updated German translations and also the `.pot` file for all translators.
 
 = 1.0.3 (2014-10-20) =
 * UPDATE: Fixed and improved the per page setting for the number of plugin cards, now working (better) with all supported tabs.
 * NEW: Added 12 new curated topic tags to the "Topics" tab.
-* UPDATE: Various small improvements, mostly regarding (inline) documentation and readme.txt file.
+* UPDATE: Various small improvements, mostly regarding (inline) documentation and `readme.txt` file.
 * CODE: Switched linked topic tags to "slug" linking internally.
-* UPDATE: Updated German translations and also the .pot file for all translators.
+* UPDATE: Updated German translations and also the `.pot` file for all translators.
 
 = 1.0.2 (2014-10-09) =
 * UPDATE: Fixed debug notice on "Topics" tab, plus internal improvements.
 * UPDATE: Fixed markup issue on "Collections" tab.
 * UPDATE: Readme here, another FAQ entry, plus added video walkthrough & demo :).
-* UPDATE: Updated German translations and also the .pot file for all translators.
+* UPDATE: Updated German translations and also the `.pot` file for all translators.
 
 = 1.0.1 (2014-10-09) =
 * UPDATE: Improved Multisite compatibility for "Plugin Cards per page" screen options setting.
-* UPDATE: Various small improvements, mostly regarding (inline) documentation and readme.txt file.
+* UPDATE: Various small improvements, mostly regarding (inline) documentation and `readme.txt` file.
 
 = 1.0.0 (2014-10-09) =
 * Initial release
 
 == Upgrade Notice ==
+
+= 1.1.0 =
+Tweaked Plugin ZIP Uploader page! Improved: extensibility, CSS & mobile support. Also updated .pot file for translators plus German translations.
 
 = 1.0.3 =
 Improved "plugin cards per page" handling. Minor improvements & additions. Also updated .pot file for translators plus German translations.
