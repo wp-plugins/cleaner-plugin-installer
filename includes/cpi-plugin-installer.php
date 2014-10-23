@@ -264,11 +264,6 @@ add_action( 'ddw_cpi_plugin_installer_topics', 'ddw_cpi_topics_tab_content' );
  */
 function ddw_cpi_topics_tab_content() {
 
-	if ( in_array( get_locale(), array( 'de_DE', 'de_AT', 'de_CH', 'de_LU', 'gsw' ) ) ) {
-
-	}
-
-
 	/** All collections, filterable */
 	$collections = apply_filters(
 		'cpi_filter_topic_tag_collections',
