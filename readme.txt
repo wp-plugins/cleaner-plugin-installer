@@ -4,7 +4,7 @@ Donate link: http://genesisthemes.de/en/donate/
 Tags: plugin installer, cleaner, plugins, installer, search, admin, focus, efficient, deckerweb
 Requires at least: 4.0
 Tested up to: 4.1
-Stable tag: 1.1.0
+Stable tag: 1.2.0
 License: GPL-2.0+
 License URI: http://www.opensource.org/licenses/gpl-license.php
 
@@ -170,6 +170,15 @@ Possible, via the above code for "Collections" tab: you only have to add the fol
 
 == Changelog ==
 
+= 1.2.0 (2014-10-27) =
+* NEW: Bring back the submit button for the original search bar in the toolbar (only visible when performing a search).
+* UPDATE: Tweaked the large search form on the "Start: Search" tab even more: now fully mobile optimized as well - smoother overall performance :).
+* NEW: Added 2 new curated topic tags to the "Topics" tab.
+* NEW: Added compatibility plus basic styling for RTL languages (Right-To-Left direction languages).
+* UPDATE: Further mobile optimizations.
+* UPDATE: In the plugin overhauled some description texts to be more precise.
+* UPDATE: Updated German translations and also the `.pot` file for all translators.
+
 = 1.1.0 (2014-10-23) =
 * NEW: Tweaked the Plugin ZIP Uploader page! Larger file input field (or drag a file in...), bigger and nicer button. All more clear and logical - as one would expect it (hopefully)!
 * NEW: Added 10 new curated topic tags to the "Topics" tab.
@@ -204,6 +213,9 @@ Possible, via the above code for "Collections" tab: you only have to add the fol
 * Initial release
 
 == Upgrade Notice ==
+
+= 1.2.0 =
+Further mobile optimizations. Basic RTL support. Submit button for installer toolbar search form. Also updated .pot file for translators plus German translations.
 
 = 1.1.0 =
 Tweaked Plugin ZIP Uploader page! Improved: extensibility, CSS & mobile support. Also updated .pot file for translators plus German translations.
