@@ -4,7 +4,7 @@ Donate link: http://genesisthemes.de/en/donate/
 Tags: plugin installer, cleaner, plugins, installer, search, admin, focus, efficient, deckerweb
 Requires at least: 4.0
 Tested up to: 4.1
-Stable tag: 1.2.0
+Stable tag: 1.2.1
 License: GPL-2.0+
 License URI: http://www.opensource.org/licenses/gpl-license.php
 
@@ -78,9 +78,13 @@ Now it starts with what should have been the default (in my opinion) from the be
  * *OR via FTP upload:* Upload `cleaner-plugin-installer` folder to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
 3. Go to the "Plugins > Add Plugins" admin page again and enjoy the new experience... :-)
-4. Optionally set number of plugin cards per page via "Screen Options" tab (on top right corner).
 
-= Requirements =
+= Optional user options =
+1. Optionally set number of plugin cards per page via "Screen Options" tab (on top right corner).
+2. Only for "Topics" tab: switch the search type from "tag" to "keyword" (term) for the plugin tag lists.
+
+
+= Plugin Requirements =
 * WordPress version 4.0 or higher!
 * At least capability of `install_plugins` for your user role (to access the plugin installer page)!
 * (Technically the plugin is compatible also with older WP versions, styling is made for WP 4.0+!)
@@ -170,6 +174,13 @@ Possible, via the above code for "Collections" tab: you only have to add the fol
 
 == Changelog ==
 
+= 1.2.1 (2014-10-29) =
+* NEW: Added new "Screen Option" to the "Topics" tab for setting the search type to "keyword": that means, the linked tag lists will trigger a search for the keyword ("term") instead of the "tag" search. This might bring other/ better/ whatever different search results. It's a per user setting. *--- Mad props to [Brady Vercher](https://profiles.wordpress.org/bradyvercher) of [Blaser Six, Inc.](http://www.blazersix.com/) for contributing the core code for this feature!*
+* NEW: Added a few subtle CSS tweaks to the Thickbox modal window when opening a plugin card (details view). So hopefully you'll find that "install button" a bit better and faster now, and maybe like the donate link better :-).
+* UPDATE: Make the plugin cards per page setting also available for the optional "Beta Testing" tab.
+* UPDATE: Various small improvements, mostly regarding, code organization, (inline) code documentation and `readme.txt` file.
+* UPDATE: Updated German translations and also the `.pot` file for all translators.
+
 = 1.2.0 (2014-10-27) =
 * NEW: Bring back the submit button for the original search bar in the toolbar (only visible when performing a search).
 * UPDATE: Tweaked the large search form on the "Start: Search" tab even more: now fully mobile optimized as well - smoother overall performance :).
@@ -214,23 +225,11 @@ Possible, via the above code for "Collections" tab: you only have to add the fol
 
 == Upgrade Notice ==
 
+= 1.2.1 =
+New "Screen Option" for "Topics" tab. CSS tweaks for Thickbox modal window. Also updated .pot file for translators plus German translations.
+
 = 1.2.0 =
 Further mobile optimizations. Basic RTL support. Submit button for installer toolbar search form. Also updated .pot file for translators plus German translations.
-
-= 1.1.0 =
-Tweaked Plugin ZIP Uploader page! Improved: extensibility, CSS & mobile support. Also updated .pot file for translators plus German translations.
-
-= 1.0.3 =
-Improved "plugin cards per page" handling. Minor improvements & additions. Also updated .pot file for translators plus German translations.
-
-= 1.0.2 =
-Fixed debug notice and markup issue. Also updated .pot file for translators plus German translations.
-
-= 1.0.1 =
-Improved Multisite compatibility for "Plugin Cards per page" screen options setting.
-
-= 1.0.0 =
-Just released into the wild.
 
 == Plugin Links ==
 * [Translations (GlotPress)](http://translate.wpautobahn.com/projects/wordpress-plugins-deckerweb/cleaner-plugin-installer)
@@ -248,12 +247,15 @@ Enjoy using *Cleaner Plugin Installer*? Please consider [making a small donation
 
 **Easy plugin translation platform with GlotPress tool:** [**Translate "Cleaner Plugin Installer"...**](http://translate.wpautobahn.com/projects/wordpress-plugins-deckerweb/cleaner-plugin-installer)
 
-*Note:* All my plugins are internationalized/ translateable by default. This is very important for all users worldwide. So please contribute your language to the plugin to make it even more useful. For translating I recommend the awesome ["Codestyling Localization" plugin](https://wordpress.org/plugins/codestyling-localization/) and for validating the ["Poedit Editor"](http://www.poedit.net/), which works fine on Windows, Mac and Linux.
+*Note:* All my plugins are internationalized/ translateable by default. This is very important for all users worldwide. So please contribute your language to the plugin to make it even more useful. For translating and validating I recommend the ["Poedit Editor"](http://www.poedit.net/), which works fine on Windows, Mac and Linux.
 
 == Idea Behind / Philosophy ==
 As of WordPress 4.0+ the new plugin installer start page was annoying me. By scratching my own itch here I came up with this plugin ;-). I hope you enjoy it as much as I do :).
 
 == Credits ==
+* [Brady Vercher](https://profiles.wordpress.org/bradyvercher) of [Blaser Six, Inc.](http://www.blazersix.com/) for contributing the "Screen Options" code for the "Topics" tab - Thank you, Brady!
+* Plugin user [Mario Bego Garde a.k.a. "pixolin"](https://profiles.wordpress.org/pixolin) for helpful feedback to make the plugin even better - Thank you, Bego!
+* All users and testers of the plugin, especially all [5-star reviewers](https://wordpress.org/support/view/plugin-reviews/cleaner-plugin-installer?filter=5) - you guys rock!
 * Thanks to WordPress Core for the awesome Hooks & Filters system! :)
 * Thanks to the "Dashicon" (font icon) creators, so I could make the appearance a tiny little bit friendlier.
 
