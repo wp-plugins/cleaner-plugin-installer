@@ -4,7 +4,7 @@ Donate link: http://genesisthemes.de/en/donate/
 Tags: plugin installer, cleaner, plugins, installer, search, admin, focus, efficient, deckerweb
 Requires at least: 4.0
 Tested up to: 4.1
-Stable tag: 1.2.1
+Stable tag: 1.2.2
 License: GPL-2.0+
 License URI: http://www.opensource.org/licenses/gpl-license.php
 
@@ -174,6 +174,9 @@ Possible, via the above code for "Collections" tab: you only have to add the fol
 
 == Changelog ==
 
+= 1.2.2 (2014-10-29) =
+* UPDATE: Fix "Topics" tab screen options display correctly in Multisite.
+
 = 1.2.1 (2014-10-29) =
 * NEW: Added new "Screen Option" to the "Topics" tab for setting the search type to "keyword": that means, the linked tag lists will trigger a search for the keyword ("term") instead of the "tag" search. This might bring other/ better/ whatever different search results. It's a per user setting. *--- Mad props to [Brady Vercher](https://profiles.wordpress.org/bradyvercher) of [Blaser Six, Inc.](http://www.blazersix.com/) for contributing the core code for this feature!*
 * NEW: Added a few subtle CSS tweaks to the Thickbox modal window when opening a plugin card (details view). So hopefully you'll find that "install button" a bit better and faster now, and maybe like the donate link better :-).
@@ -224,6 +227,9 @@ Possible, via the above code for "Collections" tab: you only have to add the fol
 * Initial release
 
 == Upgrade Notice ==
+
+= 1.2.2 =
+New "Screen Option" for "Topics" tab - Multisite fix. CSS tweaks for Thickbox modal window. Also updated .pot file for translators plus German translations.
 
 = 1.2.1 =
 New "Screen Option" for "Topics" tab. CSS tweaks for Thickbox modal window. Also updated .pot file for translators plus German translations.
