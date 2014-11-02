@@ -159,6 +159,7 @@ Possible, via the above code for "Collections" tab: you only have to add the fol
 
 = What does the "Slim Mode" do? =
 For power users this is to remove/ hide the following things:
+
 * Remove help texts on the "Start: Search" tab
 * Remove help texts on the "Topics" tab
 * Remove the "Collections" tab completely
@@ -193,7 +194,13 @@ if ( ! defined( 'CPI_SLIM_MODE' ) ) {
 
 7. Cleaner Plugin Installer: Added little note on Network plugin installer screen in Multisite to make it crystal clear where the installing happens! :) ([Click here for larger version of screenshot](https://www.dropbox.com/s/69ze03hsu0jcrr8/screenshot-7.png?dl=0))
 
-8. Cleaner Plugin Installer: Plugin's help tab. ([Click here for larger version of screenshot](https://www.dropbox.com/s/gogmbfw8dgqbmgl/screenshot-8.png?dl=0))
+8. Cleaner Plugin Installer: Also added littel note to a (Sub) Site's plugins page - to make it crystal clear, where what happens (only in Multisite installs!). ([Click here for larger version of screenshot](https://www.dropbox.com/s/gogmbfw8dgqbmgl/screenshot-8.png?dl=0))
+
+9. Cleaner Plugin Installer: Search field and plugins counter integration for "At a Glance" Dashboard widget. ([Click here for larger version of screenshot](https://www.dropbox.com/s/wxlq2gjfjsrm2c3/screenshot-9.png?dl=0))
+
+10. Cleaner Plugin Installer: Search field and network plugins counter integration for "Right Now" Dashboard widget in Multisite's Network admin. ([Click here for larger version of screenshot](https://www.dropbox.com/s/tmr4kdv99vf25ah/screenshot-10.png?dl=0))
+
+11. Cleaner Plugin Installer: Plugin's help tab. ([Click here for larger version of screenshot](https://www.dropbox.com/s/f8cex53no2go08s/screenshot-11.png?dl=0))
 
 == Changelog ==
 
@@ -209,6 +216,8 @@ if ( ! defined( 'CPI_SLIM_MODE' ) ) {
 * UPDATE: Added Dashicon icon to our own Help Tab section link to make clear this is additional and not for Core help texts.
 * CODE: Added `$page = 1` to all our tab functions to be 100% compliant with WordPress Core functions expecting this.
 * CODE: More refinements, fixed PHP notices, minor enhancements, code documentation.
+* UPDATE: Added 3 new screenshots.
+* UPDATE: Updated and improved `readme.txt` file here.
 * UPDATE: Updated German translations and also the `.pot` file for all translators.
 
 = 1.2.2 (2014-10-29) =
