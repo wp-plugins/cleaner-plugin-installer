@@ -4,7 +4,7 @@ Donate link: http://genesisthemes.de/en/donate/
 Tags: plugin installer, cleaner, plugins, installer, search, admin, focus, efficient, deckerweb
 Requires at least: 4.0
 Tested up to: 4.1
-Stable tag: 1.2.2
+Stable tag: 1.3.0
 License: GPL-2.0+
 License URI: http://www.opensource.org/licenses/gpl-license.php
 
@@ -34,9 +34,11 @@ Now it starts with what should have been the default (in my opinion) from the be
 * Cleaner, more easy, more useful!
 * Improved performance of `plugin-install.php` admin start page!
 * Additional curated topics with list of plugin tags (from WordPress.org) for lots of use cases etc.
-* Additional basic integration of ["WPCore Plugin Manager"](https://wordpress.org/plugins/wpcore/) base plugin and service.
+* Additional basic integration of ["WPCore Plugin Manager"](https://wordpress.org/plugins/wpcore/) base plugin and service, as well as "WP Favs".
 * Added "Screen Options" tab (on top right corner) to *set number of plugin cards per page* on a per user basis.
 * Tweaked "ZIP Uploader page" - larger file upload field, plus bigger button.
+* Search field and plugins number integration for "At a Glance" and "Right Now" (Multisite) Dashboard widgets.
+* Optional "Slim Mode" to hide various help texts etc. from the plugin - for power users (see bottom of [FAQ page](https://wordpress.org/plugins/cleaner-plugin-installer/faq/ "See in FAQ section for more info ...")).
 * Highly extensible: Additional hooks and filters in place so you could easily tweak my plugin's output (or add, or remove) if ever needed :)
 * Lightweight, simple one-purpose plugin. Loads only within `/wp-admin/` when and where needed.
 * Fully embracing Multisite Network modus, yeah!
@@ -154,6 +156,27 @@ Possible, via the above code for "Collections" tab: you only have to add the fol
 	unset( $tabs[ 'topics' ] );
 `
 
+
+= What does the "Slim Mode" do? =
+For power users this is to remove/ hide the following things:
+* Remove help texts on the "Start: Search" tab
+* Remove help texts on the "Topics" tab
+* Remove the "Collections" tab completely
+* Remove the help texts on the "Uploader" page
+* Remove the notice on the Multisite plugins installer page
+* Remove the plugins counter entry on the Dashboard widget
+
+= How do I activate the "Slim Mode"? =
+That is relatively easy, just add the following code snippet to your `wp-config.php` file or a functionality plugin:
+`
+/**
+ * Plugin: Cleaner Plugin Installer - activate Slim Mode.
+ */
+if ( ! defined( 'CPI_SLIM_MODE' ) ) {
+	define( 'CPI_SLIM_MODE', TRUE );
+}
+`
+
 == Screenshots ==
 
 1. Cleaner Plugin Installer: BEFORE view of the "Plugins > Add Plugins" admin page (Add New). ([Click here for larger version of screenshot](https://www.dropbox.com/s/wpjgjatt0ipvoh6/screenshot-1.png?dl=0))
@@ -173,6 +196,20 @@ Possible, via the above code for "Collections" tab: you only have to add the fol
 8. Cleaner Plugin Installer: Plugin's help tab. ([Click here for larger version of screenshot](https://www.dropbox.com/s/gogmbfw8dgqbmgl/screenshot-8.png?dl=0))
 
 == Changelog ==
+
+= 1.3.0 (2014-11-02) =
+* NEW: Now also supporting "WPFavs.com" bulk plugin installer service ([GPL plugin at WordPress.org](https://wordpress.org/plugins/wpfavs/)) - in addition to "WPCore.com".
+* NEW: Added support for plugin ["Upload Larger Plugins" (free, by David Anderson)](https://wordpress.org/plugins/upload-larger-plugins/), regarding our tweaked uploader page (which will hide gracefully once this other plugin is active).
+* NEW: Added plugin search field to "At a Glance" Dashboard widget - comes in really handy :-).
+* NEW: Also added plugin search field to "Right Now" Dashboard widget in Multisite's Network admin.
+* NEW: Added links and counters for active and total installed plugins to "At a Glance"/ "Right Now" Dashboard widgets - great for admins to get a first overview plugin-wise :).
+* NEW: Added (current) version number of plugins to plugin card overview.
+* NEW: Added "Slim Mode" to the plugin; to be activated via constant - it removes/ hides a few help texts etc. for power users [see FAQ section here](https://wordpress.org/plugins/cleaner-plugin-installer/faq/ "See in FAQ section for more info ...") for more info on that, and how to activate!
+* UPDATE: Moved all visual arrows over to CSS! This also means simplified and improved RTL languages support in removing all PHP-tweaking from RTL-related things (beyond the stylesheet loading).
+* UPDATE: Added Dashicon icon to our own Help Tab section link to make clear this is additional and not for Core help texts.
+* CODE: Added `$page = 1` to all our tab functions to be 100% compliant with WordPress Core functions expecting this.
+* CODE: More refinements, fixed PHP notices, minor enhancements, code documentation.
+* UPDATE: Updated German translations and also the `.pot` file for all translators.
 
 = 1.2.2 (2014-10-29) =
 * UPDATE: Fix "Topics" tab screen options display correctly in Multisite.
@@ -227,6 +264,9 @@ Possible, via the above code for "Collections" tab: you only have to add the fol
 * Initial release
 
 == Upgrade Notice ==
+
+= 1.3.0 =
+Several new features and improvements. Also updated .pot file for translators plus German translations.
 
 = 1.2.2 =
 New "Screen Option" for "Topics" tab - Multisite fix. CSS tweaks for Thickbox modal window. Also updated .pot file for translators plus German translations.
