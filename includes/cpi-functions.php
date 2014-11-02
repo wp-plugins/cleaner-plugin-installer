@@ -335,7 +335,6 @@ function ddw_cpi_plugin_install_link( $plugin_slug = '', $text = '', $title_text
 }  // end function
 
 
-//add_action( 'network_admin_notices', 'ddw_cpi_network_installer_notice' );
 /**
  * Add a little notice in the Multisite Network plugin installer pages to tell
  *    the user where he currently is (compared to the regular site installer).
@@ -348,9 +347,7 @@ function ddw_cpi_plugin_install_link( $plugin_slug = '', $text = '', $title_text
 function ddw_cpi_network_installer_notice() {
 
 	/** Bail early if in Slim Mode or not in plugin installer */
-	if ( /* ddw_cpi_is_slim() */
-		'plugin-install.php' !== $GLOBALS[ 'pagenow' ]
-	) {
+	if ( 'plugin-install.php' !== $GLOBALS[ 'pagenow' ] ) {
 
 		return;
 
@@ -367,7 +364,6 @@ function ddw_cpi_network_installer_notice() {
 }  // end function
 
 
-//add_action( 'admin_notices', 'ddw_cpi_site_installer_notice' );
 /**
  * Add a little notice in the Multisite Network plugin installer pages to tell
  *    the user where he currently is (compared to the regular site installer).
@@ -380,9 +376,7 @@ function ddw_cpi_network_installer_notice() {
 function ddw_cpi_site_installer_notice() {
 
 	/** Bail early if in Slim Mode or not in plugin installer */
-	if ( /* ddw_cpi_is_slim() */
-		'plugins.php' !== $GLOBALS[ 'pagenow' ]
-	) {
+	if ( 'plugins.php' !== $GLOBALS[ 'pagenow' ] ) {
 
 		return;
 
