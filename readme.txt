@@ -180,23 +180,23 @@ if ( ! defined( 'CPI_SLIM_MODE' ) ) {
 
 == Screenshots ==
 
-01. Cleaner Plugin Installer: BEFORE view of the "Plugins > Add Plugins" admin page (Add New). ([Click here for larger version of screenshot](https://www.dropbox.com/s/wpjgjatt0ipvoh6/screenshot-1.png?dl=0))
+1. Cleaner Plugin Installer: BEFORE view of the "Plugins > Add Plugins" admin page (Add New). ([Click here for larger version of screenshot](https://www.dropbox.com/s/wpjgjatt0ipvoh6/screenshot-1.png?dl=0))
 
-02. Cleaner Plugin Installer: AFTER view of the "Plugins > Add Plugins" admin page (Add New), after activating this plugin. ([Click here for larger version of screenshot](https://www.dropbox.com/s/sclx8djssnngnqa/screenshot-2.png?dl=0))
+2. Cleaner Plugin Installer: AFTER view of the "Plugins > Add Plugins" admin page (Add New), after activating this plugin. ([Click here for larger version of screenshot](https://www.dropbox.com/s/sclx8djssnngnqa/screenshot-2.png?dl=0))
 
-03. Cleaner Plugin Installer: Additional "Topics" tab -- 2 column view since version v1.1.0. ([Click here for larger version of screenshot](https://www.dropbox.com/s/g6f2sc0oasw5b52/screenshot-3.png?dl=0))
+3. Cleaner Plugin Installer: Additional "Topics" tab -- 2 column view since version v1.1.0. ([Click here for larger version of screenshot](https://www.dropbox.com/s/g6f2sc0oasw5b52/screenshot-3.png?dl=0))
 
-04. Cleaner Plugin Installer: Additional "Collections" tab ([Click here for larger version of screenshot](https://www.dropbox.com/s/tioagtmipl7pzrd/screenshot-4.png?dl=0))
+4. Cleaner Plugin Installer: Additional "Collections" tab ([Click here for larger version of screenshot](https://www.dropbox.com/s/tioagtmipl7pzrd/screenshot-4.png?dl=0))
 
-05. Cleaner Plugin Installer: Added "Screen Options" tab for *setting number of plugin cards per page* - on a per user basis. ([Click here for larger version of screenshot](https://www.dropbox.com/s/psnpnxls3u6yg2l/screenshot-5.png?dl=0))
+5. Cleaner Plugin Installer: Added "Screen Options" tab for *setting number of plugin cards per page* - on a per user basis. ([Click here for larger version of screenshot](https://www.dropbox.com/s/psnpnxls3u6yg2l/screenshot-5.png?dl=0))
 
-06. Cleaner Plugin Installer: Tweaked ZIP uploader page with larger file input field and bigger upload button. ([Click here for larger version of screenshot](https://www.dropbox.com/s/7fqcitzudk3zand/screenshot-6.png?dl=0))
+6. Cleaner Plugin Installer: Tweaked ZIP uploader page with larger file input field and bigger upload button. ([Click here for larger version of screenshot](https://www.dropbox.com/s/7fqcitzudk3zand/screenshot-6.png?dl=0))
 
-07. Cleaner Plugin Installer: Added little note on Network plugin installer screen in Multisite to make it crystal clear where the installing happens! :) ([Click here for larger version of screenshot](https://www.dropbox.com/s/69ze03hsu0jcrr8/screenshot-7.png?dl=0))
+7. Cleaner Plugin Installer: Added little note on Network plugin installer screen in Multisite to make it crystal clear where the installing happens! :) ([Click here for larger version of screenshot](https://www.dropbox.com/s/69ze03hsu0jcrr8/screenshot-7.png?dl=0))
 
-08. Cleaner Plugin Installer: Also added littel note to a (Sub) Site's plugins page - to make it crystal clear, where what happens (only in Multisite installs!). ([Click here for larger version of screenshot](https://www.dropbox.com/s/gogmbfw8dgqbmgl/screenshot-8.png?dl=0))
+8. Cleaner Plugin Installer: Also added littel note to a (Sub) Site's plugins page - to make it crystal clear, where what happens (only in Multisite installs!). ([Click here for larger version of screenshot](https://www.dropbox.com/s/gogmbfw8dgqbmgl/screenshot-8.png?dl=0))
 
-09. Cleaner Plugin Installer: Search field and plugins counter integration for "At a Glance" Dashboard widget. ([Click here for larger version of screenshot](https://www.dropbox.com/s/wxlq2gjfjsrm2c3/screenshot-9.png?dl=0))
+9. Cleaner Plugin Installer: Search field and plugins counter integration for "At a Glance" Dashboard widget. ([Click here for larger version of screenshot](https://www.dropbox.com/s/wxlq2gjfjsrm2c3/screenshot-9.png?dl=0))
 
 10. Cleaner Plugin Installer: Search field and network plugins counter integration for "Right Now" Dashboard widget in Multisite's Network admin. ([Click here for larger version of screenshot](https://www.dropbox.com/s/tmr4kdv99vf25ah/screenshot-10.png?dl=0))
 
