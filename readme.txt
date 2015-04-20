@@ -3,7 +3,7 @@ Contributors: daveshine, deckerweb
 Donate link: http://genesisthemes.de/en/donate/
 Tags: plugin installer, cleaner, plugins, installer, search, admin, focus, efficient, deckerweb
 Requires at least: 4.0
-Tested up to: 4.1
+Tested up to: 4.2
 Stable tag: 1.3.0
 License: GPL-2.0+
 License URI: http://www.opensource.org/licenses/gpl-license.php
